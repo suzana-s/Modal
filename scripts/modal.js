@@ -1,8 +1,8 @@
-const buttonsControllersModal = document.querySelectorAll("[data-control-modal]")
+let buttonToggle = document.querySelectorAll("[data-modal-control]")
 
-for(let index = 0; index < buttonsControllersModal.length; index++){
-    buttonsControllersModal[index].addEventListener("click", ()=>{
-        let modalId = buttonsControllersModal[index].getAttribute("data-control-modal")
-        document.getElementById(modalId).classList.toggle("show-modal")
+for(let i = 0; i < buttonToggle.length; i++){
+    buttonToggle[i].addEventListener("click", () => {
+        let valueDataModalControl = buttonToggle[i].getAttribute("data-modal-control")
+        document.getElementById(valueDataModalControl).classList.toggle("show-modal")
     })
 }
