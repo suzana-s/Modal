@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Modal</title>
+</head>
+<body>
+    <button data-control-modal="modal-login">Abrir Modal Login</button>
+    <div class="modal-wrapper" id="modal-login">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Title</h3>
+                <button class="modal-close" data-control-modal="modal-login">X</button>
+            </div>
+            <div class="modal-body">
+                Modal Login
+            </div>
+        </div>
+    </div>
+    <button data-control-modal="modal-cadastro">Abrir Modal Cadastro</button>
+    <div class="modal-wrapper" id="modal-cadastro">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Title</h3>
+                <button class="modal-close" data-control-modal="modal-cadastro">X</button>
+            </div>
+            <div class="modal-body">
+                Modal Cadastro
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/modal.js"></script>
+</body>
+</html>
